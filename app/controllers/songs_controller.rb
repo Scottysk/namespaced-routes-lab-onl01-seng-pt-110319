@@ -25,7 +25,7 @@ class SongsController < ApplicationController
   end
 
   def new
-    @psong = Song.first
+    @song = Song.first
     if @song.allow_create_songs
       @song = Song.new
     else
